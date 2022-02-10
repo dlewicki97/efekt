@@ -1,0 +1,32 @@
+@import 'about.css';
+@import 'title-section.css';
+
+.phrases {
+  padding: var(--global-padding-x);
+  background-color: #f3fbfd;
+}
+.phrase {
+  border-bottom: 2px solid var(--second);
+  padding: 1rem 10vw;
+}
+.phrase:first-child {
+  margin-top: 3rem;
+}
+.phrase:last-child {
+  border-bottom: 0;
+}
+.phrase p {
+  margin-bottom: 0;
+  color: var(--first);
+}
+.phrase-german {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.phrase-polish {
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 0.9rem;
+}

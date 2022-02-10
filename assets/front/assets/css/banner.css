@@ -1,0 +1,30 @@
+.banner {
+}
+
+.banner-bg {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.banner-mask {
+  background-color: var(--banner_mask);
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner-text {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 2rem var(--global-padding-x);
+  position: relative;
+  z-index: 3;
+  line-height: 41px;
+}

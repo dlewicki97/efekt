@@ -1,0 +1,86 @@
+@import 'style.css';
+@import 'about.css';
+@import 'working-conditions.css';
+@import 'banner.css';
+
+.contact {
+  padding: var(--global-padding-x);
+  color: var(--first);
+  font-size: 0.9rem;
+}
+.contact .col-12 {
+  padding: 0;
+}
+.contact-anchor {
+  color: inherit !important;
+  font-weight: 200;
+  display: block;
+  font-size: 20px;
+}
+.contact-anchor:hover {
+  font-weight: 700;
+}
+.company {
+  font-size: 20px;
+}
+.contact-description {
+  font-weight: 200;
+}
+.contact-description strong {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.contact-square {
+  border: 1px solid #8bd8ed;
+  opacity: 0.26;
+  transform: rotate(-45.00000000000001deg) translate(-4px, -38px);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coordinator-support {
+  padding: var(--global-padding-x);
+}
+.tile {
+  margin-bottom: 1.5rem;
+}
+.tile-bg {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  align-items: center;
+  border-radius: 12px;
+}
+.tile-flag {
+  height: 100px;
+  border-radius: inherit;
+}
+
+.tile-title {
+  color: var(--first);
+  font-size: 1.2rem;
+}
+
+.tile-description {
+  font-weight: 200;
+  color: #8d8d8dab;
+  font-size: 0.85rem;
+  line-height: 23px;
+}
+@media (max-width: 992px) {
+  .tile-bg {
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tile-flag {
+    display: none;
+  }
+}

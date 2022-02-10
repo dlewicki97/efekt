@@ -1,0 +1,11 @@
+@import 'banner.css';
+
+.rodo {
+  padding: var(--global-padding-x);
+}
+
+.rodo-description {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

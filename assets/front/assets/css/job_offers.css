@@ -1,0 +1,412 @@
+@import 'big-banner.css';
+@import 'pagination.css';
+@import 'modal.css';
+
+.job-offers {
+  background-color: #f3fbfd;
+}
+.job-offers-desc {
+  padding: var(--global-padding-x) 20vw;
+}
+.job-offers-desc .title {
+  color: var(--first);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.job-offers-desc .description p {
+  color: #8d8d8d;
+  line-height: 23px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.offer-main-container a:focus,
+.offer-main-container a:active,
+.offer-main-container a:visited,
+.offer-main-container a:link {
+  text-decoration: none;
+}
+.offer-main-container {
+  background-color: #f3fbfd;
+  position: relative;
+  overflow: hidden;
+  padding: var(--global-padding-x);
+}
+.offer-tiles {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin: 3rem 0;
+  box-shadow: 0 0.5rem var(--offer_attributes), 0 0 4rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.offer-tiles > * {
+  width: 100%;
+  min-height: 33%;
+  padding: 4vw 4vw;
+}
+.offer-tile-bottom {
+  position: relative;
+  background-color: var(--offer_attributes_bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 4vw;
+}
+.offer-tile-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  margin: 0;
+}
+.offer-tile-bottom ul li {
+  position: relative;
+  padding-right: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+  color: var(--offer_attributes);
+  display: flex;
+  align-items: center;
+}
+.offer-tile-bottom ul li::before {
+  position: relative;
+  content: '\25C6   ';
+  color: var(--offer_attributes);
+  font-size: 0.9rem;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 0.3rem;
+  line-height: 1.2rem;
+}
+.offer-tile-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  overflow: hidden;
+}
+.offer-middle-tile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+}
+.offer-tile-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.offer-tile-top > div:first-child {
+  padding-left: 0;
+}
+.offer-tile-top > div:last-child {
+  padding-right: 0;
+}
+.offer-tile-top-titles {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 1vw;
+}
+.offer-tile-top-titles > h4 {
+  color: var(--second);
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
+.offer-tile-top-titles > h2 {
+  color: #035691;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+.offer-tile-top-button {
+  padding: 0 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-button {
+  padding: 1rem 2.5rem;
+  background-color: var(--first);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+.offer-button > h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.offer-button:hover {
+  background-color: var(--second);
+  box-shadow: 0 0 1rem var(--second);
+}
+.offer-tile-top-button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vw;
+}
+.offer-tile-top-button-text h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--first);
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+.offer-tile-top-button-text h1:hover {
+  color: #1d5b8a;
+  text-shadow: 0 0 2rem #1d5b8a;
+}
+.offer-tile-top-titles,
+.offer-tile-top-button,
+.offer-tile-top-button-text {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.offer-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.offer-title-container > * {
+  margin: 0;
+}
+.offer-title-container h3 {
+  padding-top: 1rem;
+  color: var(--second);
+  font-size: 2rem;
+}
+.offer-title-container h1 {
+  color: #035691;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.background-offer-container {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border: 0.2rem solid rgba(146, 218, 238, 0.1);
+  transform: rotate(45deg);
+  background-color: transparent;
+  left: 15%;
+  /* left: 15rem; */
+  top: 6.5rem;
+}
+.background-little-offer-container {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.2rem solid rgba(146, 218, 238, 0.1);
+  transform: rotate(45deg);
+  background-color: transparent;
+  left: 33rem;
+  /* left: 31rem; */
+  top: 11.25rem;
+}
+
+@media (max-width: 1630px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.3rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.5rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.3rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1488.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.2rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.4rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.2rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1488.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.2rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.4rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.2rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.1rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.3rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.1rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1310.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.2rem;
+  }
+  .offer-button > h1 {
+    font-size: 1rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1220.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.3rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.5rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.3rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1.3rem;
+  }
+  .offer-tile-top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .offer-tile-bottom ul li {
+    font-size: 1rem;
+  }
+  .offer-tile-bottom ul {
+    padding: 0.5rem 0;
+  }
+  .offer-middle-tile-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1086.98px) {
+  .offer-tile-top-titles > h4 {
+    font-size: 1.1rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.3rem;
+  }
+  .offer-button > h1 {
+    font-size: 1.1rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offer-tile-bottom ul li {
+    font-size: 0.95rem;
+  }
+  .offer-tile-bottom ul {
+    padding: 1rem;
+  }
+  .offer-tiles ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer-middle-tile-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .offer-tile-top-titles > h4 {
+    font-size: 1rem;
+  }
+  .offer-tile-top-titles > h2 {
+    font-size: 1.2rem;
+  }
+  .offer-tile-top-titles {
+    align-items: center;
+    padding: 1vh 0.5rem;
+  }
+  .offer-button > h1 {
+    font-size: 1rem;
+  }
+  .offer-tile-top-button-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offer-tile-bottom ul li {
+    padding: 0.5vh 1vw;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 470.98px) {
+  .offer-tile-top {
+    flex-direction: column;
+  }
+  .offer-tile-bottom ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .offer-tile-bottom ul li {
+    padding: 0.5vh 0;
+    align-items: flex-start;
+  }
+  .offer-middle-tile-text {
+    text-align: left;
+  }
+}
+
+@media (max-width: 372px) {
+  .offer-tiles ul li {
+    text-align: left;
+    display: flex;
+  }
+}

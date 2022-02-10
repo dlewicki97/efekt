@@ -1,0 +1,9 @@
+@import 'banner.css';
+@import 'title-section.css';
+@import 'style.css';
+@import 'about.css';
+
+.title-section-description,
+.banner.contest {
+  padding: var(--global-padding-x);
+}

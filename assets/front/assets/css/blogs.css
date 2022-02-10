@@ -1,0 +1,73 @@
+@import 'banner.css';
+@import 'banner2.css';
+@import 'modal.css';
+@import 'pagination.css';
+
+.blogs {
+  padding: var(--global-padding-x);
+}
+.blogs .col-12 {
+  padding: 0.5rem;
+}
+.blog {
+  box-shadow: 0 20px 50px rgba(2, 77, 136, 0.1);
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-bg {
+  height: 220px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.blog-date {
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  color: var(--first);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  height: fit-content;
+  font-size: 0.85rem;
+}
+
+.blog-title,
+.blog-listing-description {
+  padding: 2rem;
+}
+.blog-title {
+  color: var(--first);
+  font-weight: 700;
+  padding-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.blog-listing-description {
+  color: #8d8d8d9c;
+  font-size: 0.85rem;
+  line-height: 20px;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  font-weight: 100;
+}
+
+.blog-button {
+  background-color: var(--first);
+  color: white !important;
+  transition: all 0.2s;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.blog-button:hover {
+  background-color: var(--second);
+}

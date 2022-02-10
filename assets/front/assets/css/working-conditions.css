@@ -1,0 +1,27 @@
+@import 'about.css';
+@import 'style.css';
+@import 'banner.css';
+.form-section {
+  padding: var(--global-padding-x);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3fbfd;
+}
+.form-section-wrapper {
+  width: 65%;
+}
+.form-section .nav-tabs {
+  background-color: #f3fbfd !important;
+}
+.form-section .title-section-title {
+  text-align: center;
+}
+.form-section .rodo {
+  padding-top: 1rem;
+}
+@media (max-width: 500px) {
+  .form-section-wrapper {
+    width: 100%;
+  }
+}

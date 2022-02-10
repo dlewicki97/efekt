@@ -1,0 +1,84 @@
+.cookies-alert {
+    opacity: 0;
+    display: none;
+    background-color: var(--first);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1em 1.8em;
+    color: white;
+    z-index: 100;
+    font-weight: 500;
+    z-index: 999999;
+    letter-spacing: 1px;
+}
+
+.cookies-alert a {
+    color: white !important;
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: 0.2s all;
+}
+
+.cookies-alert.active {
+    opacity: 1;
+    display: flex;
+}
+
+.cookies-alert a:hover {
+    text-decoration: unset;
+    opacity: 1;
+}
+
+.cookies-alert button {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    outline: unset;
+    padding: 0.4rem 1.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s all;
+}
+
+.cookies-alert button:hover {
+    color: var(--first);
+    background: white;
+}
+
+.cookies-badge.active {
+    display: block;
+    opacity: 1;
+}
+
+.cookies-badge {
+    background-color: var(--first);
+    bottom: 0;
+    left: 3em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    position: fixed;
+    transition: all 1s ease;
+    transform: translateY(2em);
+    display: none;
+    opacity: 0;
+    z-index: 100;
+    padding: 0.5em;
+}
+
+.cookies-badge:hover {
+    transform: translateY(0);
+}
+
+.cookies-badge:hover div {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cookies-badge div {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}

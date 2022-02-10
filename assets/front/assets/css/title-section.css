@@ -1,0 +1,22 @@
+.title-section-title {
+  font-size: 2rem;
+  color: var(--first);
+  font-weight: 900;
+  margin-bottom: 0rem;
+}
+.title-section-subtitle {
+  color: var(--second);
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.title-section-description {
+  margin-bottom: 2rem;
+}
+.title-section-description p {
+  color: #8d8d8d;
+  line-height: 24px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}

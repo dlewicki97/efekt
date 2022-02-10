@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Italic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Light.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-LightItalic.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Medium.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-MediumItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

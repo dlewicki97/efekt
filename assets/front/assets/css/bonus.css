@@ -1,0 +1,40 @@
+@import 'big-banner.css';
+@import 'banner2.css';
+@import 'modal.css';
+
+.contest {
+  padding: var(--global-padding-x);
+}
+.contest-description p {
+  color: #8d8d8db0;
+  line-height: 24px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0 25vw;
+}
+
+.button-primary,
+.button-secondary {
+  width: unset;
+  height: unset;
+  padding: 0.8rem 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .contest {
+    padding: var(--global-padding-x);
+  }
+  .button-primary,
+  .button-secondary {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .button-primary,
+  .button-secondary {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
